@@ -1,7 +1,6 @@
 // *******************          Set Variable       *****************
 
-const body = document.body; 
-const container = document.querySelector(".container"); 
+const body = document.body;
 
 // create our Elements    ******   1 Header
 
@@ -26,14 +25,14 @@ for (let link = 0; link < navList.length; link++) {
   links.classList.add("link");
   links.appendChild(linksText);
   list.appendChild(links);
-  links.style.cssText = `display: flex;justify-content: space-between;align-items: center;padding: 10px 20px;margin: 0 20px; `;
+  links.style.cssText = `display: flex;justify-content: space-between;align-items: center;padding: 10px 20px;margin: 0 20px;font-size:22px; `;
 }
 
 //  1  -- 3  styling elements
 
-header.style = "height: 100px;background-color:#13c6ed;";
+header.style = "height: 100px;background-color:#13c6ed;width:100vw";
 navBar.style.cssText =
-  "display: flex;justify-content: space-between;align-items: center;flex-direction: row;";
+  "display: flex;justify-content: space-around;align-items: center;flex-direction: row;width:100vw";
 logo.style.cssText = `
     background-color: blue;height:100px;width:100px;
     background-image: url(/images/logo.jpeg) ;background-size: cover;
@@ -45,23 +44,18 @@ list.style.cssText = `justify-content: space-between;display: flex;align-items: 
 navBar.appendChild(logo);
 navBar.appendChild(list);
 header.appendChild(navBar);
-container.appendChild(header);
-body.prepend(container);
+body.append(header);
 
 // create our Elements    ******   2   main-page
+
 // 2  -- 1  Create our Elements & Class
 
-const mainPage = document.createElement('div')
-mainPage.classList.add('mainPage')
-mainPage.style.cssText = `height: 100%;width: 100%;position: relative;background-color: yellowgreen;`
 
 
-container.appendChild(mainPage)
-
-
-
-
-
-
-
-
+const containerMain = document.createElement("div")
+containerMain.classList.add('container-main')
+const mainPage = document.createElement("div");
+mainPage.classList.add("mainPage");
+mainPage.style.cssText = `height: 100%;width: 100vw;background-color: yellowgreen;`;
+mainPage.appendChild(containerMain)
+body.append(mainPage);
