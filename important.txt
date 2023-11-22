@@ -1,0 +1,4 @@
+  
+  
+  //   1    Best way exercices pactice
+  appendchild link to list with forof loop
