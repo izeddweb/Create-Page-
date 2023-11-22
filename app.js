@@ -1,6 +1,7 @@
 // *******************          Set Variable       *****************
 
-const container = document.querySelector(".container"); //   like your body
+const body = document.body; 
+const container = document.querySelector(".container"); 
 
 // create our Elements    ******   1 Header
 
@@ -34,10 +35,10 @@ header.style = "height: 100px;background-color:#13c6ed;";
 navBar.style.cssText =
   "display: flex;justify-content: space-between;align-items: center;flex-direction: row;";
 logo.style.cssText = `
-    margin-left:20px;background-color: blue;height:100px;width:100px;
+    background-color: blue;height:100px;width:100px;
     background-image: url(/images/logo.jpeg) ;background-size: cover;
 `;
-list.style.cssText = `justify-content: space-between;display: flex;align-items: center;margin: 0 20px; `;
+list.style.cssText = `justify-content: space-between;display: flex;align-items: center; `;
 
 //  1  -- 4  append Header to page
 
@@ -45,5 +46,22 @@ navBar.appendChild(logo);
 navBar.appendChild(list);
 header.appendChild(navBar);
 container.appendChild(header);
+body.prepend(container);
 
-// *******************          Set Function       *****************
+// create our Elements    ******   2   main-page
+// 2  -- 1  Create our Elements & Class
+
+const mainPage = document.createElement('div')
+mainPage.classList.add('mainPage')
+mainPage.style.cssText = `height: 100%;width: 100%;position: relative;background-color: yellowgreen;`
+
+
+container.appendChild(mainPage)
+
+
+
+
+
+
+
+

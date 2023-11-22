@@ -1,0 +1,54 @@
+/*     normalize */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-align: center;
+    font-family: fantasy;
+    list-style: none;
+}
+body{
+    background: #2a2929;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+
+}
+.container {
+    width: 90%;
+    height: 100%;
+    margin: auto;
+    background-color: #b0aaaa;
+}
+
+
+/*    component */
+
+
+.flex-c {
+    display: flex;
+    justify-content: center;
+    
+}
+.flex-col {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+
+}
+.flex-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+}
+/* .mainPage {
+    height: 100%;
+    width: 100%;
+    position: relative;
+    background-color: yellowgreen;
+} */
+
+
